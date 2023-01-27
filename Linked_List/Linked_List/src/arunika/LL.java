@@ -1,5 +1,6 @@
 package arunika;
 
+
 import java.util.LinkedList;
 
 public class LL {
@@ -38,7 +39,7 @@ public class LL {
         size++;
     }
 
-    public void InsertAtIndex(int val,int index)      //insertion at any index
+   public void InsertAtIndex(int val,int index)      //insertion at any index
     {
         if(index == 0)
         {
@@ -61,8 +62,64 @@ public class LL {
         temp.next = node;
         size++;
 
-    }
+    } 
 
+   public int DeleteFirst()
+   {
+    int val = head.value;
+    head = head.next;
+    if(head == null)
+    {
+        tail = null;
+        size--;
+    }
+    return val;
+   }
+
+   public int DeleteLast()
+   {
+    if(size<=1)
+    {
+        return DeleteFirst();
+    }
+    int val = tail.value;
+    Node secondLast = get(size-2);
+
+    tail = secondLast;
+    tail.next = null;
+    size--;
+    return val;
+   }
+
+   public void DeleteAtIndex(int index) {
+    if (index == 0) {
+        head = head.next;
+        size--;
+        return;
+    }
+    if (index == size - 1) {
+        Node secondLast = get(size - 2);
+        secondLast.next = null;
+        tail = secondLast;
+        size--;
+        return;
+    }
+    Node prevNode = get(index - 1);
+    Node currNode = prevNode.next;
+    prevNode.next = currNode.next;
+    size--;
+}
+
+public Node get(int index){
+
+    Node node = head;
+    for(int i=0;i<index;i++)
+    {
+        node = node.next;
+    }
+    return node;
+ }
+   
     public void display(){
         Node temp = head;
 
@@ -89,4 +146,4 @@ public class LL {
              
         }
     }
-
+    
