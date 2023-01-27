@@ -38,7 +38,7 @@ public class LL {
         size++;
     }
 
-    public void InsertAtIndex(int val,int index)
+    public void InsertAtIndex(int val,int index)      //insertion at any index
     {
         if(index == 0)
         {
