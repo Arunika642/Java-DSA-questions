@@ -1,0 +1,10 @@
+int[] nums = {1, 2, 3, 1, 2, 3};
+Set<Integer> set = new HashSet<>();
+for (int num : nums) {
+    set.add(num);
+}
+int[] result = new int[set.size()];
+int i = 0;
+for (int num : set) {
+    result[i++] = num;
+}
