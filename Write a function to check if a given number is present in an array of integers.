@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+
+public class Arrays {
+    public static void main(String[] args) {
+        int [] arr = {13,56,34,23,76};
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Enter the no. you want to search"); 
+        int element = in.nextInt();
+        
+        boolean result = checkIfPresent(arr , element);
+        System.out.println(result);
+    }
+
+    static boolean checkIfPresent(int brr[] , int a) {
+        int flag = 0;
+    
+        for(int j = 0 ;j < brr.length ; j++) {
+            if(brr[j] == a) {
+                flag = 1;
+            }
+        }
+        if(flag == 1)
+        return true;
+        else
+        return false;
+    }
+}
