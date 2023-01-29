@@ -1,3 +1,4 @@
+/*Linear search algo */
 package Algorithms;
 
 import java.util.Scanner;
