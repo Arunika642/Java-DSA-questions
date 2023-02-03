@@ -1,3 +1,6 @@
+/*Assuming that array is sorted */
+
+
 package binarysearch;
 
 public class BinarySearchAlgo {
