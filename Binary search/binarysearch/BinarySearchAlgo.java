@@ -5,7 +5,7 @@ package binarysearch;
 
 public class BinarySearchAlgo {
     public static void main(String[] args) {
-        int[] arr = {1,2,4,5,7,3,9};
+        int[] arr = {-18,-12,-4,0,2,3,4,15,16,18,22,29,45};
         int target = 4;
         int ans = search(arr,target);
         System.out.println(ans);
