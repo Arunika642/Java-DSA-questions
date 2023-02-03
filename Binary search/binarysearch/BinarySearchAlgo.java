@@ -1,4 +1,4 @@
-/*Assuming that array is sorted */
+/*Assuming that array is sorted in ascending order */
 
 
 package binarysearch;
