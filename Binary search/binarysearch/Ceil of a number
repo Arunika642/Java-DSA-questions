@@ -1,6 +1,6 @@
 /*Ceil of the no: Smallest greater no. than the target element 
  * array = {2,3,5,9,14,16,18}
- * target = 5 , So it should return 
+ * target = 5 , So it should return 9
  * if target = 9, Output = 14
  * target = 14, output =14*/
 
