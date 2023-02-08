@@ -5,8 +5,6 @@
  * target = 14, output =14*/
 
 
-package binarysearch;
-
 public class CeilOfNo {
 
     public static void main(String[] args) {
