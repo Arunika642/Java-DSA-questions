@@ -6,8 +6,7 @@ abstract class Book{
 	String getTitle(){
 		return title;
 	}
-	
-}
+	}
 
 class MyBook extends Book{
     public void setTitle(String s)
