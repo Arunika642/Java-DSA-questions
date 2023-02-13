@@ -6,8 +6,7 @@ class Main {
     System.out.println("Enter currency in rupees");
     float x = in.nextFloat();
     float USD;
-    USD = x/81.81f;
-    
+    USD = x/81.81f;   
       System.out.println("The currency in USD is " +USD);
   }
 }
