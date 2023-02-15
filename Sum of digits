@@ -16,6 +16,7 @@ class Main{
     sum = sum + ans;
     n = n/10;
     }
+
     return sum;
   }
 
