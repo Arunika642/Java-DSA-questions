@@ -1,6 +1,5 @@
 /*Assuming that array is sorted in ascending order */
 
-
 package binarysearch;
 
 public class BinarySearchAlgo {
